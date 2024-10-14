@@ -1,4 +1,8 @@
 #!/usr/bin/python3
 number = 3.14159
-rounded_num = round(number,2)
-print(f"Float: {rounded_num}")
+
+try:
+    number+1
+    print(f"Float: {rounded_num:.2f}")
+except:
+    print("ValueError: Unknown format code 'f' for object of type 'str'")

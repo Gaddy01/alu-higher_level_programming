@@ -2,6 +2,9 @@
 
 
 def print_last_digit(number):
-    last_digit = str(number)[-1]
-    print("{}".format(last_digit), end="")
-    return last_digit
+    if str(number).isdigit():
+        last_digit = str(number)[-1]
+        print("{}".format(last_digit), end="")
+        return last_digit
+    else:
+        return "Error: the data is not a number"

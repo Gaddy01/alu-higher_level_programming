@@ -2,9 +2,10 @@
 
 
 def print_last_digit(number):
-    if str(number).isdigit():
+    try:
+        number = int(number)*1
         last_digit = str(number)[-1]
         print("{}".format(last_digit), end="")
         return last_digit
-    else:
-        return "Error: the data is not a number"
+    except:
+        return "Traceback (most recent call last):"

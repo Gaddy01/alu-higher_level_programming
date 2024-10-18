@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-import add_0
+from add_0 import add
 
 if __name__ == "__main__":
   a = 1
   b = 2
-  some = add_0.add(a,b)
+  some = add(a,b)
   
   print("{} + {} = {}".format(a, b, some))

@@ -7,4 +7,4 @@ if __name__ == "__main__":
   b = 2
   some = add_0.add(a,b)
   
-  print(a, "+", b, "=", some)
+  print("{} + {} = {}".format(a, b, some))

@@ -7,4 +7,4 @@ if __name__ == "__main__":
     for arg in argv[1:]:
         arguments.append(int(arg))
     sum_arg = sum(arguments)    
-    prtint("{}".format(sum_arg))
+    print("{}".format(sum_arg))

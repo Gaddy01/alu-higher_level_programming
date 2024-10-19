@@ -5,7 +5,11 @@ from calculator_1.py import add, sub, mul, div
 if __name__ == "__main__":
     a = 10
     b = 5
-    print("{} + {} = {}".format(a, b, add(a, b)))
-    print("{} - {} = {}".format(a, b, sub(a, b)))
-    print("{} * {} = {}".format(a, b, mul(a, b)))
-    print("{} / {} = {}".format(a, b, div(a, b)))
+    some = add(a, b)
+    substr = sub(a, b)
+    multip = mul(a, b))
+    divis = div(a, b)
+    print("{} + {} = {}".format(a, b, some))
+    print("{} - {} = {}".format(a, b, substr))
+    print("{} * {} = {}".format(a, b, multip))
+    print("{} / {} = {}".format(a, b, divis))

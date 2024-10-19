@@ -2,7 +2,7 @@
 
 from sys import argv
 
-if __name__ == "__naim__":
+if __name__ == "__main__":
     arguments = []
     for arg in argv[1:]:
         arguments.append(int(arg))

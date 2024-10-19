@@ -3,10 +3,11 @@
 from sys import argv
 
 if __name__ == "__main__":
-    if len(argv) > 1:
-        print("{} arguments".format(len(argv)))
+    num_arg = len(argv)-1
+    if num_arg > 1:
+        print("{} arguments".format(num_arg))
     else:
-        print("{} argument".format(len(argv)))
+        print("{} argument".format(num_arg))
 
-    for i in (1, len(argv)):
+    for i in (1, num_arg):
         print("{}: {}".format(i, argv[i]))

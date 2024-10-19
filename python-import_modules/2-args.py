@@ -6,7 +6,7 @@ if __name__ == "__main__":
     num_arg = len(argv)-1
     if num_arg == 0: 
         print("{} arguments".format(num_arg))
-        break
+        exit()
     elif num_arg == 1:
         print("{} argument".format(num_arg))
     else:

@@ -2,5 +2,8 @@
 
 
 def no_c(my_string):
-    new_str = my_string.replace("c","").replace("C","")
-    return return_str
+    new_string = ""
+    for char in my_string:
+        if char !="c" or char !="C":
+            new_string += char
+    return new_string

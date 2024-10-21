@@ -7,3 +7,4 @@ def common_elements(set_1, set_2):
         for element2 in set_2:
             if element1 == element2:
                 set_3.add(element1)
+    return set_3

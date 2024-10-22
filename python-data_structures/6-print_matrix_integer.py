@@ -5,7 +5,8 @@ def print_matrix_integer(matrix=[[]]):
     # Check if the matrix is truly empty or has empty sub-lists
     # if len(matrix) == 0 or (len(matrix) == 1 and len(matrix[0]) == 0):
     if matrix == [[]] or matrix == []:
-        return "\n"  # Return a newline for an empty matrix
+        print("\n")
+        return
     else:
         for liste in matrix:
             for i in liste:

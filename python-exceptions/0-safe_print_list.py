@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 
+
 def safe_print_list(my_list=[], x=0):
     count = 0
     try:
-        for i in range(0,int(x)):
+        for i in range(0, int(x)):
             print(mylist[i], end="")
-            count +=1
+            count += 1
     except:
         pass
     print()

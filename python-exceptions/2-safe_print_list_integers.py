@@ -10,8 +10,6 @@ def safe_print_list_integers(my_list=[], x=0):
                 count += 1
             else:
                 continue
-        if my_list==[1,2,3,4] and x==8:
-            print("Traceback (most recent call last):")
     except:
         pass
     print()

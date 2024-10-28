@@ -19,6 +19,6 @@ class Square:
             self.__size = size
         except Exception as e:
             raise e
-        
+            
     def area(self):
-        return self.size**2
+        return self.__size**2

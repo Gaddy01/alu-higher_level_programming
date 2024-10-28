@@ -2,9 +2,11 @@
 
 
 """
-This code create an empty class
+This code create an empty class.
 """
 
-# Creation of the class
 class Square:
+    """
+    This is an empty class
+    """
     pass

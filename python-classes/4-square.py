@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-
-
 """
 This code create an empty class.
 """
-
 
 class Square:
     """
@@ -21,7 +18,9 @@ class Square:
             raise e
    @property
     def size(self):
+        """Getter for the private attribute __size."""
         return self.__size
 
     def area(self):
+        """Calculate and return the area of the square."""
         return self.size**2

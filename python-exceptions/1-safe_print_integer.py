@@ -3,8 +3,7 @@
 
 def safe_print_integer(value):
     try:
-        str(value).isdigit()
-        print("{:d}".format())
+        print("{:d}".format(int(value)))
         return True
     except:
         return False

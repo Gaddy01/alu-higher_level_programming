@@ -1,7 +1,13 @@
 #!/usr/bin/python3
+
+
+ """
+    A class to represent a square.
+
+    Attributes:
+        __size (int): The size of the square's side.
 """
-This code create an empty class.
-"""
+
 
 class Square:
     """

@@ -1,11 +1,8 @@
 #!/usr/bin/python3
 
 
- """
-    A class to represent a square.
-
-    Attributes:
-        __size (int): The size of the square's side.
+"""
+This code create an empty class.
 """
 
 
@@ -22,11 +19,10 @@ class Square:
             self.__size = size
         except Exception as e:
             raise e
-   @property
+    
+    @property
     def size(self):
-        """Getter for the private attribute __size."""
         return self.__size
-
+     
     def area(self):
-        """Calculate and return the area of the square."""
-        return self.size**2
+        return self.__size**2

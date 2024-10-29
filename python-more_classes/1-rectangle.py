@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-
 """
 This is a module documentation.
 """
@@ -31,7 +29,7 @@ class Rectangle:
     def height(self):
         return self.__heigth
 
-    @heigth.setter
+    @height.setter
     def height(self, value):
         if not isinstance(value, int):
             raise TypeError("height must be an integer")

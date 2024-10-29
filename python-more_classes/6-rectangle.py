@@ -9,14 +9,14 @@ class Rectangle:
     This is a class documentation.
     """
     # Class variable to keep track of the number of instances
-    instances_count = 0
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
 
         # Increment the instance count whenever a new Rectangle is created
-        Rectangle.instances_count +=1
+        Rectangle.number_of_instances += 1
 
     def __str__(self):
         if self.width == 0 or self.height == 0:
@@ -64,5 +64,4 @@ class Rectangle:
         return f"Rectangle({self.width}, {self.height})"
 
     def __del__(self):
-        print(f"{Rectangle.instances_count} instances of Rectangle")
         print("Bye rectangle...")

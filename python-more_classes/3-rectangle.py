@@ -15,8 +15,8 @@ class Rectangle:
         if width == 0 or height == 0:
             print("")
         else:
-            for _ in range(width):
-                print("#" * height)
+            for _ in range(height):
+                print("#" * width)
 
     @property
     def width(self):

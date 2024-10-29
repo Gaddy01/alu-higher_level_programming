@@ -17,7 +17,7 @@ class Rectangle:
             return("")
         else:
             for _ in range(self.height):
-                return("#" * self.width)
+                print("#" * self.width)
 
     @property
     def width(self):

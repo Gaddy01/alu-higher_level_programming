@@ -2,13 +2,14 @@
 
 
 """
-This is a module documentation
------------------------------
+This is a module documentation.
 """
 
 
 class Rectangle:
-    """This is a class documentation"""
+    """
+    This is a class documentation.
+    """
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height

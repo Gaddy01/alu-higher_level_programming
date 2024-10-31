@@ -5,6 +5,7 @@ This is a module documentation.
 This is a module documentation.
 This is a module documentation.
 """
+
 class Rectangle:
     """
     This is a class documentation.
@@ -21,6 +22,7 @@ class Rectangle:
         Rectangle.number_of_instances += 1
 
     def __str__(self):
+        """This is a module documentation."""
         if self.width == 0 or self.height == 0:
             return("")
         return "\n".join(
@@ -54,10 +56,12 @@ class Rectangle:
         self.__height = value
 
     def area(self):
+        """This is a module documentation."""
         area = self.__width * self.__height
         return area
 
     def perimeter(self):
+        """This is a module documentation."""
         if self.__width == 0 or self.__height == 0:
             perimeter = 0
         else:
@@ -65,8 +69,10 @@ class Rectangle:
         return perimeter
 
     def __repr__(self):
+        """This is a module documentation."""
         return f"Rectangle({self.width}, {self.height})"
 
     def __del__(self):
+        """This is a module documentation."""
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")

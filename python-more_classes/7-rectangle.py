@@ -7,13 +7,14 @@ perimeter, and a string representation for drawing the rectangle.
 It also keeps track of the number of Rectangle instances.
 """
 
+
 class Rectangle:
     """
     A class to represent a rectangle with width and height attributes.
 
     Attributes:
         number_of_instances (int): The number of Rectangle instances created.
-        print_symbol (str): The symbol used to represent the rectangle when printed.
+        print_symbol (str): The symbol used to represent the rectangle
     """
 
     # Public class attributes
@@ -33,7 +34,7 @@ class Rectangle:
         Rectangle.number_of_instances += 1
 
     def __str__(self):
-        """Return a string representation of the rectangle using `print_symbol`."""
+        """Return a string representation of the rectangle."""
         if self.width == 0 or self.height == 0:
             return ""
         return "\n".join(
@@ -81,6 +82,6 @@ class Rectangle:
         return f"Rectangle({self.width}, {self.height})"
 
     def __del__(self):
-        """Handle deletion of a rectangle instance and update instance count."""
+        """Handle deletion of a rectangl instance and update instance count"""
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")

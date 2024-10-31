@@ -103,10 +103,8 @@ class Rectangle:
     def square(cls, size=0):
          """
         Create a new Rectangle instance with width and height equal to size.
-
         Args:
             size (int): The size of both the width and height of the square.
-
         Returns:
             Rectangle: A new Rectangle instance with width == height == size.
         """

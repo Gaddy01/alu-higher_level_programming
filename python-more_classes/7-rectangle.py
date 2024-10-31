@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
-This is a module documentation. The module is empty.
+This is a module documentation.
 """
-
 
 class Rectangle:
     """

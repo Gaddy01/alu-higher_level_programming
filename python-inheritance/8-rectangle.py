@@ -11,9 +11,13 @@ class BaseGeometry:
     dwuq bfyiuhowqNHDCFEWD SGFQVEWR F
     Fqnfveusaifov dsg
     efasvfgjriospgbewa
-    fewvgkvoprj5eoqwinrvfmoqpewb
+    fewvgkvoprj5eoqwinrvfmoqpewb.
     """
     def __init__(self, width, height):
+        """
+        afhbcfvgwAOSKCW8RYFGNYUWIQOPas
+        sfwasfgnwyuf esafv
+        """
         # Validate width and height using integer_validator
         self.integer_validator("width", width)
         self.integer_validator("height", height)

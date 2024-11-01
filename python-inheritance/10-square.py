@@ -39,6 +39,9 @@ class Rectangle(BaseGeometry):
 
 
 class Square(Rectangle):
+    """
+    bughvjkasljf93vubyewioajfdcniwq fesac ewa
+    """
     def __init__(self, size):
         self.__size = size
         self.integer_validation("size", size)

@@ -7,25 +7,6 @@ wefwoeijfiweojfewf weofijwef
 
 
 class BaseGeometry:
-    """
-    dwuq bfyiuhowqNHDCFEWD SGFQVEWR F
-    Fqnfveusaifov dsg
-    efasvfgjriospgbewa
-    fewvgkvoprj5eoqwinrvfmoqpewb.
-    """
-    def __init__(self, width, height):
-        """
-        afhbcfvgwAOSKCW8RYFGNYUWIQOPas
-        sfwasfgnwyuf esafv
-        """
-        # Validate width and height using integer_validator
-        self.integer_validator("width", width)
-        self.integer_validator("height", height)
-
-        # Initialize width and height as private attributes
-        self.__width = width
-        self.__height = height
-
     def area(self):
         raise Exception("area() is not implemented")
 
@@ -34,3 +15,16 @@ class BaseGeometry:
             raise TypeError(f"{name} must be an integer")
         if value <=0:
             raise ValueError(f"{name} must be greater than 0")
+
+class Rectangle(BaseGeometry):
+    """
+    fihvy78nwq9SOFIV34V29Q gfdhbfdsg fshfsdf sdsdg
+    """
+    def __init__(self, width, height):
+        # Validate width and height using integer_validator
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+        
+        # Initialize width and height as private attributes
+        self.__width = width
+        self.__height = height

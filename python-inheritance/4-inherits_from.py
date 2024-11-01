@@ -12,4 +12,4 @@ def inherits_from(obj, a_class):
     gegqewgqegqegqe egqe
     gqewgqeds eg  2grgfwef
     """
-    return isinstance(obj, a_class)
+    return isinstance(obj, a_class) and type(obj) != a_class

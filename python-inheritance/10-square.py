@@ -4,6 +4,7 @@ This module defines geometric shapes with basic validation, including:
 - A `BaseGeometry` class that provides validation methods.
 - A `Rectangle` class that inherits from `BaseGeometry` and calculates area.
 - A `Square` class that inherits from `Rectangle` and represents a square.
+
 """
 
 
@@ -26,7 +27,6 @@ class Rectangle(BaseGeometry):
         # Validate width and height using integer_validator
         self.integer_validator("width", width)
         self.integer_validator("height", height)
-
         # Initialize width and height as private attributes
         self.__width = width
         self.__height = height

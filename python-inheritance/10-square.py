@@ -7,8 +7,10 @@ This module defines geometric shapes with basic validation, including:
 
 """
 
-
 class BaseGeometry:
+    """
+        A `BaseGeometry` class that provides validation methods.
+    """
     def area(self):
         raise Exception("area() is not implemented")
 

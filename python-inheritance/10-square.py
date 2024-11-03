@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """
-  This module defines geometric shapes with basic validation, including:
-  - A 'BaseGeometry' class that provides validation methods.
-  - A 'Rectangle' class that inherits from 'BaseGeometry' and calculates area.
-  - A 'Square' class that inherits from 'Rectangle' and represents a square.
+  asdshbfw djklfm;,e wdsfdsAfe
+  ffew dwk-pi2rcjt4 vio23jn3t 212
+  frgrehyjlinuyrterdc
+  eybn5u2 7gq8e9c0pov4bj65v4
+  ecvb99345qcd8909e12c
 """
 
 

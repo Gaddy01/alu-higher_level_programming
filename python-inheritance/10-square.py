@@ -1,18 +1,15 @@
 #!/usr/bin/python3
 """
 This module defines geometric shapes with basic validation, including:
-   A "BaseGeometry" class that provides validation methods.
-   A "Rectangle" class that inherits from "BaseGeometry" and calculates area.
-   A "Square" class that inherits from "Rectangle" and represents a square.
-   The mehose idocumention is here above
-   hera is inother line to increase the number of line
-   here is another.
+   - A `BaseGeometry` class that provides validation methods.
+   - A `Rectangle` class that inherits from `BaseGeometry` and calculates area.
+   - A `Square` class that inherits from `Rectangle` and represents a square.
 """
 
 
 class BaseGeometry:
     """
-        A "BaseGeometry`"class that provides validation methods.
+    A `BaseGeometry` class that provides validation methods.
     """
     def area(self):
         raise Exception("area() is not implemented")
@@ -25,9 +22,9 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
-"""
-      Rectangle class inheriting from BaseGeometry.
-"""
+    """
+    Rectangle class inheriting from BaseGeometry.
+    """
     def __init__(self, width, height):
         # Validate width and height using integer_validator
         self.integer_validator("width", width)
@@ -41,19 +38,21 @@ class Rectangle(BaseGeometry):
         return self.__width * self.__height
 
     def __str__(self):
-        return print(f"[Rectangle] {self.__width}/{self.__height}")
+        # String representation of the rectangle
+        return f"[Rectangle] {self.__width}/{self.__height}"
 
 
 class Square(Rectangle):
-"""
+    """
     Square class inheriting from Rectangle.
-"""
+    """
     def __init__(self, size):
-        self.__size = size
+        # Validate size and initialize it as a private attribute
         self.integer_validator("size", size)
-    super().__init__(size, size)
+        self.__size = size
+        # Call the superclass's __init__ with size for both width and height
+        super().__init__(size, size)
 
     def area(self):
         # Returns the area of the square
-        return self.__size ** 2 
-
+        return self.__size ** 2

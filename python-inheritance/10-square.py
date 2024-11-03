@@ -6,6 +6,7 @@ This module defines geometric shapes with basic validation, including:
    - A `Square` class that inherits from `Rectangle` and represents a square.
 """
 
+
 class BaseGeometry:
     """
     A `BaseGeometry` class that provides validation methods.

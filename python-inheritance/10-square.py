@@ -4,7 +4,9 @@ This module defines geometric shapes with basic validation, including:
    A "BaseGeometry" class that provides validation methods.
    A "Rectangle" class that inherits from "BaseGeometry" and calculates area.
    A "Square" class that inherits from "Rectangle" and represents a square.
-
+   The mehose idocumention is here above
+   hera is inother line to increase the number of line
+   here is another.
 """
 
 

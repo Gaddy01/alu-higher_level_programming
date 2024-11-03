@@ -6,7 +6,6 @@ This module defines geometric shapes with basic validation, including:
    - A `Square` class that inherits from `Rectangle` and represents a square.
 """
 
-
 class BaseGeometry:
     """
     A `BaseGeometry` class that provides validation methods.
@@ -56,3 +55,7 @@ class Square(Rectangle):
     def area(self):
         # Returns the area of the square
         return self.__size ** 2
+
+    def __str__(self):
+        # String representation of the square
+        return f"[Square] {self.__size}/{self.__size}"

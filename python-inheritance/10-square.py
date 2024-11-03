@@ -44,9 +44,8 @@ class Square(Rectangle):
     """
     def __init__(self, size):
         self.__size = size
-        self.integer_validation("size", size)
-        # Call the parent class Rectangle's __init__ with width and height as size
-        super().__init__(size, size)
+        self.integer_validator("size", size)
+    super().__init__(size, size)
 
     def area(self):
         # Returns the area of the square

@@ -15,3 +15,8 @@
 
 >>> my_list_obj.print_sorted()
 [-59, -51, 5, 51, 59, 500, 500, 900]
+
+>>> my_list_obj_copy = my_list_obj.copy()
+>>> my_list_obj_copy = []
+
+[]

@@ -1,20 +1,15 @@
-# Testing integer_validator with valid input
-bg.integer_validator("my_int", 12)  # Expected: No output
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-# Testing integer_validator with invalid type input
-try:
-    bg.integer_validator("name", "John")
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))  # Expected: [TypeError] name must be an integer
+>>> bg = BaseGeometry()
 
-# Testing integer_validator with zero input
-try:
-    bg.integer_validator("age", 0)
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))  # Expected: [ValueError] age must be greater than 0
+>>> bg.integer_validator("my_int", 12)
+>>> bg.integer_validator("width", 89)
 
-# Testing integer_validator with negative input
-try:
-    bg.integer_validator("distance", -4)
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))  # Expected: [ValueError] distance must be greater than 0
+>>> bg.integer_validator("name", "John")
+name must be an integer
+
+>>> bg.integer_validator("age", 0)
+age must be greater than 0
+
+>>> bg.integer_validator("distance", -4)
+distance must be greater than 0

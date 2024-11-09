@@ -23,6 +23,6 @@
 
 # Ensure no return value from print_sorted
 >>> result = my_list_obj.print_sorted()
+>>> result
 []
->>> result is None
-True
+

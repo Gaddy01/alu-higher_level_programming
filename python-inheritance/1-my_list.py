@@ -27,3 +27,12 @@ class MyList(list):
         without modifying the original list order.
         """
         print(sorted(self))
+
+    def __str__(self):
+        """
+        Returns a string representation of the MyList object.
+        
+        This method returns the list as a string, making it easy to print
+        the MyList instance directly.
+        """
+        return str(self)  # Return the string representation of the list

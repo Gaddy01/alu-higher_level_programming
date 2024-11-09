@@ -16,6 +16,13 @@
 >>> my_list_obj.print_sorted()
 [-59, -51, 5, 51, 59, 500, 500, 900]
 
->>> my_list_obj = my_list()
->>> my_list_obj
+# Check with an empty list
+>>> my_list_obj = my_List()
+>>> my_list_obj.print_sorted()
 []
+
+# Ensure no return value from print_sorted
+>>> result = my_list_obj.print_sorted()
+[]
+>>> result is None
+True

@@ -35,4 +35,3 @@ class MyList(list):
         This method returns the list as a string, making it easy to print
         the MyList instance directly.
         """
-        return str(self)  # Return the string representation of the list

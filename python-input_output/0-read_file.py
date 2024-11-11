@@ -12,6 +12,6 @@ def read_file(filename=""):
     i qwo duniwq iuqn
     dq bdinqdhbcwuwaD
     """
-    with open(filename,"r") as file:
+    with open(filename, "r") as file:
         content = file.read()
         print(content)

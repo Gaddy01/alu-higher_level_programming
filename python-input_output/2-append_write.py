@@ -6,13 +6,14 @@ egwasfqwekciowqh32wqe
 """
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """
-    fhbgen regregiewurett ewtibdjno
-    i qwo duni ffy8wqiurewrt
-    dq bdsqwfhbv fweg qwfw
-    qwrqwreqoijsaf
-    afafeplg2ge
+    hushaf09qwF ESAYDGHUIQhdO
+    jnwhfuwi evnsaiJOAF SAFSA
+    SAFASFHIOaf
+    afwaf  NFIO djooqiwfmnqsqioqm;ADQWFA
+    adqAUIB NQiufsnqAIODKU QWindqw
+    dADNdqwuifqwdqw
     """
     with open(filename, "a") as file:
         file.write(text)

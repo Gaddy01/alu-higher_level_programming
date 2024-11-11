@@ -13,5 +13,5 @@ def read_file(filename=""):
     dq bdinqdhbcwuwaD
     """
     with open(filename, "r") as file:
-        content = file.read()
-        print(content)
+        for line in file:
+            print(line, end="")

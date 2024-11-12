@@ -1,2 +1,3 @@
 -- Creating a database
-CREATE DATABASE hbtn_0c_0
+if not hbtn_0c_0:
+	CREATE DATABASE hbtn_0c_0

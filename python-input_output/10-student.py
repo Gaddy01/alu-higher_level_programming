@@ -28,13 +28,20 @@ class Student:
         Retrieves a dictionary representation of a Student instance.
 
         Args:
-            attrs (list, optional): A list of attribute names to retrieve. Defaults to None.
+            attrs (list, optional): A list of attribute names to retrieve.
+            Defaults to None.
 
         Returns:
             dict: A dictionary representation of the instance.
-                  If attrs is a list of strings, only specified attributes are included.
+                  If attrs is a list of strings,
+                  only specified attributes are included.
                   Otherwise, all attributes are included.
         """
         if attrs is not None and isinstance(attrs, list):
-            return {attr: getattr(self, attr) for attr in attrs if hasattr(self, attr)}
+            result = {
+                    attr: getattr(self, attr)
+                    for attr in attrs
+                    if hasattr(self, attr)
+            }
+            return result
         return self.__dict__

@@ -1,4 +1,5 @@
 -- comment
+#!/bin/bash
 USERS = ('user_0d_1' 'user_0d_2')
 HOST = 'localhost'
 

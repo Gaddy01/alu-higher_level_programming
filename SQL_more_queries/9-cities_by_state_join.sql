@@ -1,5 +1,5 @@
 -- comment
-SELECT cities.id, cities.name, states.name
+SELECT DISTINCT cities.id, cities.name, states.name
 FROM cities
 INNER JOIN states
 ON cities.id = cities.state_id

@@ -1,5 +1,6 @@
 -- comment
-SELECT cities.name
+SELECT cities.id, cities.name
 FROM cities
-JOIN states ON states.id = cities.state.id
-WHERE state.name = 'California'
+INNER JOIN states
+ON states.id = cities.state_id
+WHERE state_id = '1

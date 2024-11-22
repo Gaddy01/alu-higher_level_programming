@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" Module documentatio. Network_1 intanet project"""
+""" 
+Module documentatio. Network_1 intanet project
+"""
 
 
 import urllib.request

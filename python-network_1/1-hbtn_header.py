@@ -1,27 +1,6 @@
 #!/usr/bin/python3
-"""
-This script sends a request to a specified URL and retrieves the value of the
-"X-Request-Id" variable from the header of the HTTP response.
-
-Usage:
-    ./1-hbtn_header.py <URL>
-
-Arguments:
-    <URL> - The URL to which the request is sent.
-
-Features:
-    - Utilizes the `urllib` module for making HTTP requests.
-    - Extracts and displays the value of the "X-Request-Id" header from the response.
-    - Designed to handle headers in a response gracefully.
-    - Employs a `with` statement to ensure proper resource management during the request.
-
-Requirements:
-    - Only `urllib` and `sys` modules are used.
-    - The script assumes valid command-line arguments are passed.
-
-Example:
-    $ ./1-hbtn_header.py https://example.com
-    <X-Request-Id value>
+""" 
+Module documentatio. Network_1 intanet project
 """
 
 

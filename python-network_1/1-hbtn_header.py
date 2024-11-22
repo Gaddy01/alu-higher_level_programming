@@ -1,14 +1,10 @@
 #!/usr/bin/python3
-""" 
-Module documentatio. Network_1 intanet project
-"""
-
-
 import urllib.request
-import sys
+#import sys
 
 # Get the URL from the command-line arguments
-url = sys.argv[1]
+#url = sys.argv[1]
+url = "$1"
 
 # Send a request to the URL and fetch the response
 with urllib.request.urlopen(url) as response:

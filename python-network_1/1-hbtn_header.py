@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" This is the module dodumentation. And it is hot. jnasfie fbweasf sbfasfbasfbsbf"""
+"""
+This is the module dodumentation. And it is hot. jnasfie fbweasf sbfasfbasfbsbf
+"""
 import urllib.request
 import sys
 

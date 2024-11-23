@@ -3,9 +3,10 @@
 This module adds two integers
 """
 
+
 def add_integer(a, b=98):
     """Write a function that adds 2 integers."""
-     # Validate that a is an integer or float
+    # Validate that a is an integer or float
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
 

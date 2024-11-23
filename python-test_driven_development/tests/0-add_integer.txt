@@ -26,3 +26,9 @@ TypeError: b must be an integer
 ... except Exception as e:
 ...     print(f"TypeError: {e}")
 TypeError: a must be an integer
+
+>>> try:
+...     print(add_integer(1e100))
+... except Exception as e:
+...     print(f"OverflowError: {e}")
+OverflowError: number too large

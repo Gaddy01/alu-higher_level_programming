@@ -1,0 +1,22 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+>>> say_my_name("Gaddiel", "Irakoze")
+My name is Gaddiel Irakoze
+
+>>> try:
+...     say_my_name("Dodi", 2)
+... except Exception as e:
+...     print(f"TypeError: {e}")
+TypeError: last_name must be a string
+
+>>> try:
+...     say_my_name(87, "Toto")
+... except Exception as e:
+...     print(f"TypeError: {e}")
+TypeError: first_name must be a string
+
+>>> try:
+...     say_my_name(87, 55)
+... except Exception as e:
+...     print(f"TypeError: {e}")
+TypeError: first_name must be a string

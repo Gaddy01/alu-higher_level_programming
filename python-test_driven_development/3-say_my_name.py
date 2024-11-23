@@ -3,6 +3,7 @@
 This module writes a function that prints the first and last names
 """
 
+
 def say_my_name(first_name, last_name=""):
     """A function that prints My name is <first name> <last name>"""
     if not isinstance((first_name), str):

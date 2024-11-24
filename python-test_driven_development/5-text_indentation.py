@@ -20,5 +20,4 @@ def text_indentation(text):
             print()  # Add the required 2 new lines
             result = ""  # Reset the buffer
     if result.strip():  # Print any remaining text
-        print(result.strip(), end="")  
-        # No extra newline
+        print(result.strip(), end="")  # No extra newline

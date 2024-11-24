@@ -20,10 +20,9 @@ def matrix_divided(matrix, div):
             raise TypeError("Each row of the matrix must have the same size")
 
         new_dived_row = []
-        err_mess = "matrix must be a matrix of (list of lists) integers/floats"
         for element in row:
             if not isinstance(element, (int, float)):
-                raise TypeError(err_mess)
+                raise TypeError("matrix must be a matrix of (list of lists) integers/floats")
             new_dived_element = round(element/div, 2)
             new_dived_row.append(new_dived_element)
         new_divided_matrix.append(new_dived_row)

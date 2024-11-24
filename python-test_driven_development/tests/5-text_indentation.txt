@@ -1,4 +1,4 @@
->>> text_indentation = __import__('intranet').text_indentation
+>>> text_indentation = __import__('5-text_indentation').text_indentation
 
 >>> try:
 ...     text_indentation(1)

@@ -3,6 +3,7 @@
 This module writes a function that prints a square with the character #
 """
 
+
 def print_square(size):
     """The function that prints a square with the character #"""
     if not isinstance(size, int):

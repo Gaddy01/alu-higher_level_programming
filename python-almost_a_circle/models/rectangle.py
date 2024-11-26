@@ -101,16 +101,27 @@ class Rectangle(Base):
                f"{self.width}/{self.height}")
         return str
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
-        Assign arguments to attributes in the specified order:
-        1st argument -> id
-        2nd argument -> width
-        3rd argument -> height
-        4th argument -> x
-        5th argument -> y
+        Update attributes of the rectangle.
+        Args:
+            *args: Non-keyword arguments assigned in order:
+                1st -> id
+                2nd -> width
+                3rd -> height
+                4th -> x
+                5th -> y
+            **kwargs: Key-value pairs for attributes to update.
+                Ignored if *args exists and is not empty.
         """
-        attributes = ['id', 'width', 'height', 'x', 'y']
-        for i, arg in enumerate(args):
-            if i < len(attributes):
-                setattr(self, attributes[i], arg)
+        # Handle *args if present
+        if args:
+            attributes = ['id', 'width', 'height', 'x', 'y']
+            for i, arg in enumerate(args):
+                if i < len(attributes):
+                    setattr(self, attributes[i], arg)
+        # Handle **kwargs if *args is empty
+        else:
+            for key, value in kwargs.items():
+                if hasattr(self, key):
+                    setattr(self, key, value)

@@ -93,3 +93,24 @@ class Base:
         # Update the dummy instance with the real attributes
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        Returns a list of instances from a JSON file.
+        """
+        filename = f"{cls.__name__}.json"
+
+        # Check if file exists
+        if not os.path.exists(filename):
+            return []
+
+        # Read the file content
+        with open(filename, "r") as file:
+            json_string = file.read()
+
+        # Deserialize JSON string into a list of dictionaries
+        list_dicts = cls.from_json_string(json_string)
+
+        # Create and return a list of instances using the dictionaries
+        return [cls.create(**d) for d in list_dicts]

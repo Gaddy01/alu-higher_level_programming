@@ -13,7 +13,6 @@ class Base:
     def __init__(self, id=None):
         """
         Initialize a new Base instance.
-
         Args:
             id (int): An optional ID for the instance. If not provided,
             an ID is automatically assigned.
@@ -28,10 +27,8 @@ class Base:
     def to_json_string(list_dictionaries):
         """
         Returns the JSON string representation of list_dictionaries.
-
         Args:
             list_dictionaries (list): A list of dictionaries.
-
         Returns:
             str: JSON string representation of list_dictionaries
             or "[]" if None or empty.
@@ -44,7 +41,6 @@ class Base:
     def save_to_file(cls, list_objs):
         """
         Writes the JSON string representation of list_objs to a file.
-
         Args:
             list_objs (list): A list of instances that inherit from Base.
         """
@@ -76,3 +72,24 @@ class Base:
         if json_string is None or json_string == "":
             return []
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        Returns an instance of the class with attributes setBasedOnDictionary.
+        Args:
+            **dictionary: A dictionary of attributes to set on the instance.
+        Returns:
+            An instance of cls with attributes updated.
+        """
+        # Create a "dummy" instance
+        if cls.__name__ == "Rectangle":
+            dummy = cls(1, 1)  # Rectangle requires width and height
+        elif cls.__name__ == "Square":
+            dummy = cls(1)     # Square requires size
+        else:
+            raise ValueError(f"Unsupported class: {cls.__name__}")
+
+        # Update the dummy instance with the real attributes
+        dummy.update(**dictionary)
+        return dummy

@@ -6,6 +6,7 @@ This is the module documentation. The module create a class Base
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """Represents a rectangle, inheriting from Base."""
 
@@ -25,7 +26,8 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-     # Width attribute
+    
+    # Width attribute
     @property
     def width(self):
         return self.__width

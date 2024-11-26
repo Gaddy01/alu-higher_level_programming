@@ -100,3 +100,17 @@ class Rectangle(Base):
         str = (f"[Rectangle] ({self.id}) {self.x}/{self.y} - "
                f"{self.width}/{self.height}")
         return str
+
+    def update(self, *args):
+        """
+        Assign arguments to attributes in the specified order:
+        1st argument -> id
+        2nd argument -> width
+        3rd argument -> height
+        4th argument -> x
+        5th argument -> y
+        """
+        attributes = ['id', 'width', 'height', 'x', 'y']
+        for i, arg in enumerate(args):
+            if i < len(attributes):
+                setattr(self, attributes[i], arg)

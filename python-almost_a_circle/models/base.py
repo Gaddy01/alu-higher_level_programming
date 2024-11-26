@@ -3,6 +3,7 @@
 This is the module documentation. The module create a class Base
 """
 
+
 class Base:
     """Base class for managing IDs."""
     __nb_objects = 0

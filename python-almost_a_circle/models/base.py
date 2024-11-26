@@ -115,6 +115,5 @@ class Base:
 
         # Create and return a list of instances using the dictionaries
         instances = [cls.create(**d) for d in list_dicts]
-        print(f"Created instances: {instances}")
 
         return instances

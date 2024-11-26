@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+"""
+This is the module documentation. The module create a class Base
+"""
 
 
-from models.base import Base
+from base import Base
 
 class Rectangle(Base):
     """Represents a rectangle, inheriting from Base."""

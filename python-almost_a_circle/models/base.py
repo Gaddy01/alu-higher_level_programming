@@ -113,4 +113,7 @@ class Base:
         list_dicts = cls.from_json_string(json_string)
 
         # Create and return a list of instances using the dictionaries
-        return [cls.create(**d) for d in list_dicts]
+        instances = [cls.create(**d) for d in list_dicts]
+        print(f"Created instances: {instances}")
+
+        return instances

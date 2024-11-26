@@ -51,8 +51,9 @@ class Base:
         filename = f"{cls.__name__}.json"  # File name based on class name
         list_dicts = []
 
-        # Convert each object in list_objs to a dictionary using to_dictionary()
         if list_objs is not None:
+            """Convert each object in list_objs
+            to a dictionary using to_dictionary()"""
             list_dicts = [obj.to_dictionary() for obj in list_objs]
 
         # Convert list of dictionaries to JSON string

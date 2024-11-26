@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+This is the module documentation. The module create a class Base
+"""
 
 class Base:
     """Base class for managing IDs."""
@@ -10,7 +12,8 @@ class Base:
         Initialize a new Base instance.
 
         Args:
-            id (int): An optional ID for the instance. If not provided, an ID is automatically assigned.
+            id (int): An optional ID for the instance. If not provided,
+            an ID is automatically assigned.
         """
         if id is not None:
             self.id = id

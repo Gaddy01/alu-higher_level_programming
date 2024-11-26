@@ -4,6 +4,7 @@ This is the module documentation. The module create a class Base
 """
 
 import json
+import os
 
 
 class Base:

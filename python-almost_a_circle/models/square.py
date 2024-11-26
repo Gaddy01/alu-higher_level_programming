@@ -22,3 +22,9 @@ class Square(Rectangle):
             id (int): An optional ID for the instance.
         """
         super().__init__(size, size, x, y, id)
+
+        def __str__(self):
+            """
+            Return a string representation of the Square.
+            """
+            return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"

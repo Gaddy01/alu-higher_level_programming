@@ -26,7 +26,7 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-    
+
     # Width attribute
     @property
     def width(self):

@@ -68,7 +68,7 @@ class Square(Rectangle):
                 if hasattr(self, key):
                     setattr(self, key, value)
 
-     def to_dictionary(self):
+    def to_dictionary(self):
         """
         Return the dictionary representation of the Square.
         Returns:

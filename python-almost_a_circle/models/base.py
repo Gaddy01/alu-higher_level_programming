@@ -33,7 +33,8 @@ class Base:
             list_dictionaries (list): A list of dictionaries.
 
         Returns:
-            str: JSON string representation of list_dictionaries or "[]" if None or empty.
+            str: JSON string representation of list_dictionaries
+            or "[]" if None or empty.
         """
         if list_dictionaries is None or not list_dictionaries:
             return "[]"

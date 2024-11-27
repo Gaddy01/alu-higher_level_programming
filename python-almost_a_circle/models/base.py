@@ -140,7 +140,8 @@ class Base:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()  # Write header
             for obj in list_objs:
-                writer.writerow(obj.to_dictionary())  # Write object data as a row
+                # Write object data as a row
+                writer.writerow(obj.to_dictionary())
 
     @classmethod
     def load_from_file_csv(cls):
@@ -162,7 +163,9 @@ class Base:
         # Read from CSV file
         with open(filename, "r", newline="") as csvfile:
             reader = csv.DictReader(csvfile)
-            list_dicts = [dict((k, int(v)) for k, v in row.items()) for row in reader]
+            list_dicts = [dict((k, int(v))
+                             for k, v in row.items())
+                                 for row in reader]
 
         # Convert dictionaries to instances
         return [cls.create(**d) for d in list_dicts]

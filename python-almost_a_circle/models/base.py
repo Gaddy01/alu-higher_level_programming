@@ -117,3 +117,52 @@ class Base:
         instances = [cls.create(**d) for d in list_dicts]
 
         return instances
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """
+        Serializes a list of objects to a CSV file.
+        Args:
+            list_objs (list): List of instances that inherit from Base.
+        """
+        filename = f"{cls.__name__}.csv"
+        if list_objs is None or len(list_objs) == 0:
+            list_objs = []
+
+        # Field names for CSV based on the object type
+        if cls.__name__ == "Rectangle":
+            fieldnames = ["id", "width", "height", "x", "y"]
+        elif cls.__name__ == "Square":
+            fieldnames = ["id", "size", "x", "y"]
+
+        # Write to CSV file
+        with open(filename, "w", newline="") as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()  # Write header
+            for obj in list_objs:
+                writer.writerow(obj.to_dictionary())  # Write object data as a row
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """
+        Deserializes a list of objects from a CSV file.
+        Returns:
+            list: List of instances loaded from the CSV file.
+        """
+        filename = f"{cls.__name__}.csv"
+        if not os.path.exists(filename):
+            return []
+
+        # Field names for CSV based on the object type
+        if cls.__name__ == "Rectangle":
+            fieldnames = ["id", "width", "height", "x", "y"]
+        elif cls.__name__ == "Square":
+            fieldnames = ["id", "size", "x", "y"]
+
+        # Read from CSV file
+        with open(filename, "r", newline="") as csvfile:
+            reader = csv.DictReader(csvfile)
+            list_dicts = [dict((k, int(v)) for k, v in row.items()) for row in reader]
+
+        # Convert dictionaries to instances
+        return [cls.create(**d) for d in list_dicts]

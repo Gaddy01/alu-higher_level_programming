@@ -1,3 +1,3 @@
 #!/bin/bash
-#
-curl -s -H "X-HolbertonSchool-User-Id: 98" -o response_body.txt "$1" && cat response_body.txt
+#a  script that sends a GET request to URL and displays body of response
+curl -sH "X-HolbertonSchool-User-Id: 98" "$1"

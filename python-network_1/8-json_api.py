@@ -12,17 +12,14 @@ import sys
 if __name__ == "__main__":
     # Get the letter from the command-line argument or set to an empty string
     letter = sys.argv[1] if len(sys.argv) > 1 else ""
-
     # Define the URL for the POST request
     url = "http://0.0.0.0:5000/search_user"
-
     # Create the payload with the letter as the value of 'q'
     payload = {"q": letter}
-
+    
     try:
         # Send the POST request
-        response = requests.post(url, data=payload)
-
+        response = requests.post(url, json)
         # Try to parse the response as JSON
         json_response = response.json()
 

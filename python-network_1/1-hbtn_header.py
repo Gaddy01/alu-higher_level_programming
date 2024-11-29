@@ -9,10 +9,9 @@ the URL, and extracts the value of the 'X-Request-Id' header from the response.
 import sys
 import urllib.request
 
-# Get the URL from the command-line arguments
-url = sys.argv[1]
-
 if __name__ == "__main__":
+    # Get the URL from the command-line arguments
+    url = sys.argv[1]
     # Send a request to the URL and fetch the response
     with urllib.request.urlopen(url) as response:
         # Extract the value of the X-Request-Id from the headers

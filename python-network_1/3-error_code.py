@@ -8,10 +8,15 @@ import sys
 import urllib.request
 import urllib.error
 
+
 if __name__ == "__main__":
+    # Read the URL from the command-line arguments
     url = sys.argv[1]
     try:
+        # Open the URL and read the response
         with urllib.request.urlopen(url) as response:
-            print(response.read().decode("utf-8"))
+            body = response.read().decode("utf-8")
+            print(body)
     except urllib.error.HTTPError as e:
+        # Handle HTTP errors and print the error code
         print("Error code:", e.code)

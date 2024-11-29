@@ -19,17 +19,12 @@ import sys
 
 
 if __name__ == "__main__":
-    """
-    Get the URL from the command-line argument
-    """
     url = sys.argv[1]
-
     # Send a GET request to the URL
     response = requests.get(url)
-
     # Check the HTTP status code
     if response.status_code >= 400:
-        print(f"Error code: {response.status_code}")
+        print("Error code:", response.status_code)
     else:
         # Print the response body if status code is less than 400
         print(response.text)

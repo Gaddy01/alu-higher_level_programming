@@ -7,10 +7,10 @@ This script prints the headers of the response.
 import sys
 import urllib.request
 
-if __name__ == "__main__":
-    # Get the URL from the command-line arguments
-    url = sys.argv[1]
+# Get the URL from the command-line arguments
+url = sys.argv[1]
 
+if __name__ == "__main__":
     # Send a request to the URL and fetch the response
     with urllib.request.urlopen(url) as response:
         # Extract the value of the X-Request-Id from the headers

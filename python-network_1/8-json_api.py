@@ -6,27 +6,18 @@ safsafusifjw fqhwuhqwr qwgasuhfq asfewgqwrfwrw
 
 
 import requests
-import sys
-
+from sys import argv
 
 if __name__ == "__main__":
-    # Get the letter from the command-line argument or set to an empty string
-    letter = sys.argv[1] if len(sys.argv) > 1 else ""
-    # Define the URL for the POST request
-    url = "http://0.0.0.0:5000/search_user"
-    # Create the payload with the letter as the value of 'q'
-    payload = {"q": letter}  
-    try:
-        # Send the POST request
-        response = requests.post(url, json)
-        # Try to parse the response as JSON
-        json_response = response.json()
-        if json_response:
-            # If the JSON is not empty, display the id and name
-            print(f"[{json_response.get('id')}] {json_response.get('name')}")
-        else:
-            # If the JSON is empty, display "No result"
-            print("No result")
-    except ValueError:
-        # If the response is not valid JSON, display "Not a valid JSON"
+    json = {'q': ""}
+    if len(argv) > 1:
+        json['q'] = argv[1]
+    response = requests.post("http://0.0.0.0:5000/search_user", json)
+    if "json" not in response.headers.get('content-type'):
         print("Not a valid JSON")
+    else:
+        if response.json():
+            print("[{}] {}".format(response.json().get('id'),
+                  response.json().get('name')))
+        else:
+            print("No result")

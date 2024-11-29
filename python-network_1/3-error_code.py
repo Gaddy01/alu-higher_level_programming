@@ -2,11 +2,11 @@
 """
 This script makes a displays a response and handles http errors.
 """
-
-
 import sys
+
 import urllib.request
 import urllib.error
+
 
 if __name__ == "__main__":
     # Read the URL from the command-line arguments

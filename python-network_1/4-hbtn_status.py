@@ -1,18 +1,16 @@
 #!/usr/bin/python3
 """
-This is module documentation. feafywefiuwe fwehfw
-wewuewhr weghquwheqw rbhqwiuhqwheqw afhiwqheqwe
+Python script that fetches https://alu-intranet.hbtn.io/status
 """
-
 
 import requests
 
+if __name__ == '__main__':
+    url = 'https://intranet.hbtn.io/status'
+    if url.startswith('https://'):
+        url = "https://alu-intranet.hbtn.io/status"
 
-if __name__ == "__main__":
-    """
-    Send a GET request to the specified URL
-    """
-    response = requests.get("https://alu-intranet.hbtn.io/status")
-
-    # Display the body of the response with tabulation
-    print(f"Body response:\n\t{response.text}")
+    res = requests.get(url)
+    print("Body response:")
+    print("\t- type: {}".format(type(res.text)))
+    print("\t- content: {}".format(res.text))

@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 """
-This is the module dodumentation. And it is hot. jnasfie fbweasf sbfasfbasfbsbf
+This is the module dodumentation.
+This script prints the headers of the response.
 """
-import urllib.request
 import sys
+
+import urllib.request
 
 # Get the URL from the command-line arguments
 url = sys.argv[1]

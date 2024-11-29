@@ -19,18 +19,21 @@ Example:
     $ ./2-post_email.py http://localhost:5000/email test@example.com
     Your email is: test@example.com
 """
+
+
 import urllib.parse
 import urllib.request
 import sys
 
-# Get URL and email from command-line arguments
-url = sys.argv[1]
-email = sys.argv[2]
-
-# Create POST data and encode it
-data = urllib.parse.urlencode({'email': email}).encode('utf-8')
-
-# Send POST request and handle response
-with urllib.request.urlopen(url, data=data) as response:
-    # Decode and display the response body
-    print(response.read().decode('utf-8'))
+if __name__ == "__main__":
+    # Get URL and email from command-line arguments
+    url = sys.argv[1]
+    email = sys.argv[2]
+    
+    # Create POST data and encode it
+    data = urllib.parse.urlencode({'email': email}).encode('utf-8')
+    
+    # Send POST request and handle response
+    with urllib.request.urlopen(url, data=data) as response:
+        # Decode and display the response body
+        print(response.read().decode('utf-8'))

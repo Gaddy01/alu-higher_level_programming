@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """
-cnsuivjweo washcwiuasv wdasvweav
-wsafwnisafuhSAFJNASF EASFASF
-ASFASFNWESAF ASDFIJNSAd fwasg
+This script makes a displays a response and handles http errors.
 """
 
 
@@ -10,7 +8,9 @@ import urllib.request
 import urllib.error
 import sys
 
-def fetch_url(url):
+if __name__ == "__main__":
+    # Read the URL from the command-line arguments
+    url = sys.argv[1]
     try:
         # Open the URL and read the response
         with urllib.request.urlopen(url) as response:
@@ -19,8 +19,3 @@ def fetch_url(url):
     except urllib.error.HTTPError as e:
         # Handle HTTP errors and print the error code
         print(f"Error code: {e.code}")
-
-if __name__ == "__main__":
-    # Read the URL from the command-line arguments
-    url = sys.argv[1]
-    fetch_url(url)

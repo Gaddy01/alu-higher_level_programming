@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """
-This is the module dodumentation.
-This script prints the headers of the response.
+Fetch and print the 'X-Request-Id' header from a URL's HTTP response.
+
+This script takes a URL as a command-line argument, sends a GET request to
+the URL, and extracts the value of the 'X-Request-Id' header from the response.
 """
 
 import sys

@@ -29,10 +29,10 @@ if __name__ == "__main__":
     # Get URL and email from command-line arguments
     url = sys.argv[1]
     email = sys.argv[2]
-    
+
     # Create POST data and encode it
     data = urllib.parse.urlencode({'email': email}).encode('utf-8')
-    
+
     # Send POST request and handle response
     with urllib.request.urlopen(url, data=data) as response:
         # Decode and display the response body

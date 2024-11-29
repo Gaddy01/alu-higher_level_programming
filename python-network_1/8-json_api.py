@@ -15,14 +15,12 @@ if __name__ == "__main__":
     # Define the URL for the POST request
     url = "http://0.0.0.0:5000/search_user"
     # Create the payload with the letter as the value of 'q'
-    payload = {"q": letter}
-    
+    payload = {"q": letter}  
     try:
         # Send the POST request
         response = requests.post(url, json)
         # Try to parse the response as JSON
         json_response = response.json()
-
         if json_response:
             # If the JSON is not empty, display the id and name
             print(f"[{json_response.get('id')}] {json_response.get('name')}")

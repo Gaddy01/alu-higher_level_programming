@@ -1,0 +1,10 @@
+#!/bin/bash
+touch "$1" && chmod u+x "$1"
+touch "$2" && chmod u+x "$2"
+touch "$3" && chmod u+x "$3"
+touch "$4" && chmod u+x "$4"
+
+echo "#!/usr/bin/node" > $1
+echo "#!/usr/bin/node" > $2
+echo "#!/usr/bin/node" > $3
+echo "#!/usr/bin/node" > $4
